@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero__details">
+        <div class="hero__details__title">
+          <div>
+            <h1>TODO</h1>
+          </div>
+          <div class="image">
+            <img src="images/icon-moon.svg" />
+          </div>
+        </div>
+        <form action="">
+        <div class="hero__details__form">
+          <div class="radio">
+            <div class="empty"></div>
+              <input  id="todo"  type="text" placeholder="create a new todo" />
+            
+          </div>
+        </div>
+        <input type="submit" id="submit">
+        </form>
+        <div class="hero__details__li">
+          <ul id="items"></ul>
+          <ul class="tabs">
+            <li><a href="">5 items left</a></li>
+
+            <div class="list">
+              <li><a href="">All</a></li>
+              <li><a href="">Active</a></li>
+              <li><a href="">completed</a></li>
+            </div>
+            <li><a href="">Clear Completed</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="footer">
+        <p>drag and drop to reorder list</p>
+      </section>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

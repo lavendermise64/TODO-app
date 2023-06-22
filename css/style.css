@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.hero {
+  background-image: url("../../images/bg-desktop-light.jpg");
+  height: 40vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero__details__li {
+  background-color: white;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 10px;
+  padding: 1em;
+}
+.hero__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40%;
+  padding-top: 4em;
+}
+.hero__details form {
+  width: 100%;
+}
+.hero__details form input[type=submit] {
+  display: none;
+  margin: 0 auto;
+}
+.hero__details__li {
+  width: 40%;
+  margin: 8px;
+}
+.hero__details__li a {
+  color: black;
+}
+.hero__details__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  color: white;
+  font-size: 2rem;
+}
+.hero__details__form {
+  margin: 0 auto;
+  background-color: white;
+  width: 40%;
+  padding: 2em;
+  border-radius: 5px;
+}
+.hero__details__form #submit {
+  display: none;
+}
+.hero__details__form input[type=text] {
+  width: 98%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.hero__details__form .radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+}
+.hero__details__form .radio .empty {
+  border: 1px solid gray;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.hero__details .tabs {
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.hero__details .tabs .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.footer {
+  margin-top: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.li {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5em;
+  padding: 0.3em;
+  border-bottom: 2px solid gray;
+}
+.li img {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  display: none;
+}
+.li:hover img {
+  display: block;
+}
+
+.circle {
+  border: 1px solid gray;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: block;
+}
+
+.checked {
+  background: url("../../images/icon-check.svg") no-repeat center center, linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.checked ~ span {
+  color: grey;
+  text-decoration: line-through;
+}
